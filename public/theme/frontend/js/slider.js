@@ -8,9 +8,9 @@ var SLIDER = {
       speed: 600,
       spaceBetween: 8,
       watchSlidesProgress: true,
-      autoplay: {
-        delay: 6000,
-      },
+      // autoplay: {
+      //   delay: 6000,
+      // },
       pagination: {
         el: ".pagination-banner",
         clickable: true,
@@ -74,9 +74,12 @@ var SLIDER = {
 
   slidePartnerIndex: function () {
     const swiperPartner = new Swiper(".swiperPartner", {
-      loop: true,
+      
       slidesOffsetAfter: 0,
       spaceBetween: 8,
+      autoplay: {
+        delay: 6000,
+      },
       breakpoints: {
         320: {
           slidesPerView: 2,
@@ -93,7 +96,36 @@ var SLIDER = {
           spaceBetween: 20,
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 7,
+          spaceBetween: 30,
+        },
+      },
+    });
+  },
+
+  slideLocalPartner: function () {
+    const swiperLocalPartner = new Swiper(".swiperLocalPartner", {
+      slidesOffsetAfter: 0,
+      autoplay: {
+        delay: 6000,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 7,
           spaceBetween: 30,
         },
       },
@@ -189,7 +221,7 @@ var SLIDER = {
         },
         // when window width is >= 640px
         640: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 20,
         },
         1024: {
@@ -204,9 +236,11 @@ var SLIDER = {
     SLIDER.slideProductIndex();
     SLIDER.slideComment();
     SLIDER.slidePartnerIndex();
+    SLIDER.slideLocalPartner();
     SLIDER.slideAchieveIndex();
     SLIDER.slideResource();
     SLIDER.slideNews();
+
 
   },
 };
