@@ -1,0 +1,859 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ 
+  <link rel="stylesheet" href="./theme/frontend/scss/main.css">
+</head>
+<body class="mx-auto 2xl:text-[16px] sm:text-[14px] text-[12px] text-[#454545] font-['Lexend', sans-serif] bg-[#111]">
+  <header class="header bg-[rgba(0, 0, 0, .2)] sticky lg:fixed top-0 left-0 w-full z-20 py-3">
+    <div class="container max-w-[1780px]  flex items-center">
+      <label for="btn-menu-mobile"  class="xl:hidden block show-menu-mobile">
+        <i class="fa-solid fa-bars text-white"></i>
+      </label>
+      <input type="checkbox" name="" hidden class="nav_input" id="btn-menu-mobile">
+      <label for="btn-menu-mobile" class="nav_overlay"></label>
+      <a href="#" title="Trang chủ" class="h-logo block max-w-[100px] xl:max-w-[204px] ml-10 xl:ml-0">
+        <img src="./theme/frontend/images/logo.png" alt="">
+      </a>
+      <div class="flex-1 xl:text-center menu">
+        <div class="xl:hidden block w-3/5 mx-auto py-5">
+          <img src="./theme/frontend/images/logo.png" alt="">
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li id="toggleButton"><a href="#">About Us  <i class="fa-solid fa-caret-down ml-2"></i></a>
+            <ul id="content" class="hihi">
+              <li><a href="#">DrAid Pulmonology</a></li>
+              <li><a href="#">DrAid Oncology</a></li>
+              <li><a href="#">DrAid Thalassemia</a></li>
+            </ul>
+          </li>
+          <li><a href="#">DrAid AI Solutions <i class="fa-solid fa-caret-down ml-2"></i> </a>
+            <ul>
+              <li><a href="#">DrAid Pulmonology</a></li>
+              <li><a href="#">DrAid Oncology</a></li>
+              <li><a href="#">DrAid Thalassemia</a></li>
+            </ul>
+            <!-- <span class="btn-dropdown-menu"><i class="fa-solid fa-caret-down"></i></span> -->
+          </li>
+          <li><a href="#">DrAid Services</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">AI For Social Good</a></li>
+          <li><a href="#">Demo</a></li>
+        </ul>
+      </div>
+      <div class="flex items-center heade-right ml-auto">
+        <div class="relative mr-4 h-lang cursor-pointer hidden xl:block group text-white py-4">
+          <a href="#" class="border border-white rounded-full p-2 hover:text-[#00a99d] hover:border-[#00a99d]">
+            <i class="fa-solid fa-earth-asia fa-xl"></i>
+          </a>
+          <ul class="absolute z-50 top-[100%] invisible pointer-events-none opacity-0 transition-all duration-300 bg-[#111] text-center group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto ">
+            <li><a href="#" class="block hover:text-[#00a99d] hover:bg-[#656565] px-4 py-2">VN</a></li>
+            <li><a href="#" class="block hover:text-[#00a99d] hover:bg-[#454545] px-4 py-2">EN</a></li>
+          </ul>
+        </div>
+        <a href="#" title="Contact Us" class=" font-semibold text-white py-3 px-6 rounded-3xl border border-white hover:bg-white hover:text-[#A1D078]">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </header>
+  <section class="section-slide__banner pt-6 lg:pt-20 xl:pt-0">
+    <div class="swiper slide-banner__index">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide xl:h-[100vh] h-auto banner-video self-center">
+          <video autoplay muted class=" top-0 left-0 object-cover pointer-events-none w-full h-full">
+            <source src="https://draid.ai/public/uploads/1tin-tuc-anh/13s-draidedit.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="swiper-slide xl:h-[100vh] h-auto my-auto pb-10 lg:pb-0 ">
+          <div class="container  flex  flex-wrap items-center h-full">
+            <div class="w-full xl:w-1/2 mb-4 xl:mb-0">
+              <p class="subtitle before:h-[2px] before:w-6 before:bg-current before:mr-3 flex items-center font-semibold text-[#A1D078] uppercase tracking-[0.235rem] lg:mb-0 mb-4">
+                The game - changing product of VinBrain
+              </p>
+              <p class="title-all text-white font-medium 2xl:text-[2.5rem] xl:text-[1.5rem] text-[1.25rem] 2xl:mb-4 mb-2">
+                DrAid™ is a medical platform providing AI solutions and services in the medical field
+              </p>
+              <div class="mb-4 text-white short_content 2xl:mb-10">
+                Experience the power of advanced AI technology in healthcare, dedicated to improving lives worldwide
+              </div>
+              <a href="#" title="Discover More" class="btn btn-all">
+                <span>Try our demo</span>
+              </a>
+            </div>
+            <div class="w-full xl:w-1/2">
+              <div class="banner-image relative">
+                <div class="img-main lg:max-w-[585px] max-w-[485px] mx-auto img_full">
+                  <img src="./theme/frontend/images/banner.png" alt="">
+                </div>
+                <div class="list-pro_detail">
+                  <a href="#" class="pro-banner absolute lg:top-[15%] top-[5%] z-1 py-2 px-3 font-semibold text-white inline-flex items-center border border-white rounded-2xl bg-[rgba(255,255,255,.25)]">
+                    <span class="mr-2 icon shrink-0">
+                      <img src="./theme/frontend/images/1.png" alt="">
+                    </span>
+                    <span class="text lg:text-base text-xs">DrAid for Chest X-Ray</span>
+                  </a>
+                  <a href="#" class="pro-banner absolute lg:top-[37%] top-[45%] z-1 py-2 px-3 font-semibold text-white inline-flex items-center border border-white rounded-2xl bg-[rgba(255,255,255,.25)]">
+                    <span class="mr-2 icon shrink-0">
+                      <img src="./theme/frontend/images/2.png" alt="">
+                    </span>
+                    <span class="text lg:text-base text-xs">DrAid for Chest X-Ray</span>
+                  </a>
+                  <a href="#" class="pro-banner absolute lg:top-[59%] top-[85%] z-1 py-2 px-3 font-semibold text-white inline-flex items-center border border-white rounded-2xl bg-[rgba(255,255,255,.25)]">
+                    <span class="mr-2 icon shrink-0">
+                      <img src="./theme/frontend/images/4.png" alt="">
+                    </span>
+                    <span class="text lg:text-base text-xs">DrAid for Chest X-Ray</span>
+                  </a>
+                  <a href="#" class="pro-banner absolute lg:top-[28%] top-[25%] right-0 z-1 py-2 px-3 font-semibold text-white inline-flex items-center border border-white rounded-2xl bg-[rgba(255,255,255,.25)]">
+                    <span class="mr-2 icon shrink-0">
+                      <img src="./theme/frontend/images/4.png" alt="">
+                    </span>
+                    <span class="text lg:text-base text-xs">DrAid for Chest X-Ray</span>
+                  </a>
+                  <a href="#" class="pro-banner absolute lg:top-[48%] top-[65%] right-0 z-1 py-2 px-3 font-semibold text-white inline-flex items-center border border-white rounded-2xl bg-[rgba(255,255,255,.25)]">
+                    <span class="mr-2 icon shrink-0">
+                      <img src="./theme/frontend/images/4.png" alt="">
+                    </span>
+                    <span class="text lg:text-base text-xs">DrAid for Chest X-Ray</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-next absolute top-1/2 z-50 right-[2%] border rounded-full  w-12 h-12 hidden lg:flex justify-center items-center hover:bg-white transition-all duration-300 border-[#00a99d]">
+        <i class="fa-solid fa-arrow-right text-[#00a99d] fa-2xl"></i>
+      </div>
+      <div class="banner-prev absolute top-1/2 z-50 left-[2%] border rounded-full w-12 h-12 hidden lg:flex justify-center items-center border-[#00a99d] hover:bg-white transition-all duration-300">
+        <i class="fa-solid fa-arrow-left text-[#00a99d] fa-2xl"></i>
+      </div>
+      <div class="swp-pagination pagination-banner absolute lg:top-1/2 left-1/2 z-10"></div>
+    </div>
+  </section>
+  <!--  -->
+  <section class="relative lg:py-[5.5rem] py-[3.5rem]">
+    <div class="container bg-[#1D1D1D] lg:px-[3.5rem] xl:py-[3.5rem] relative z-10 rounded-[1.875rem]">
+      <div class="flex flex-wrap xl:flex-nowrap">
+        <div class="max-w-[42.5rem]">
+          <p class="subtitle before:h-[2px] before:w-6 before:bg-current before:mr-3 flex items-center font-semibold text-[#00A99D] uppercase tracking-[0.235rem] mb-3">
+            Introduction
+          </p>
+          <p class="text-white lg:text-[2.5rem] text-[1.5rem] lg:mb-6 mb-2">About VinBrain</p>
+          <p class="text-white font-[400] leading-6">VinBrain is a 4-year-old startup, Invested by Vingroup, the biggest conglomerate in Vietnam, VinBrain has a mission to infuse AI and IoT to improve people's lives and productivity.
+            <br>The company has developed over 300 AI models that process medical images and medical reports including X-ray, CT, MRI and medical reports data from a dataset of over 2.5 million images and big data of text.
+            The comprehensive AI platform, DrAid™, has been deployed in over 100 hospitals in Vietnam, Myanmar, New Zealand, and the US.
+          </p>
+          <a href="#" title="Discover More" class="btn btn-all lg:mt-[2.5rem] mt-[1.5rem] lg:mb-0 mb-[1.5rem]">
+            <span>Discover More</span>
+          </a>
+        </div>
+        <video autoplay muted class=" top-0 left-0 object-cover pointer-events-none w-full h-full rounded-[1.875rem]">
+          <source src="https://thumbs.dreamstime.com/videothumb_large23442/234427160.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="swiper swiperProduct ">
+        <div class="swiper-wrapper lg:pt-[2.5rem] pt-[1.5rem]">
+          <div class="swiper-slide">
+            <div class="flex items-center lg:border-r border-[#888888] pr-[2.75rem]">
+              <div class="mr-2">
+                <img src="./theme/frontend/images/Screenshot 2024-09-17 143307.png" alt="">
+              </div>
+              <div class="">
+                <p class="gradient-text xl:text-[2.5rem] lg:text-[1.75rem] text-[1.5rem] leading-[3.125rem]">2,3M+</p>
+                <p class="text-[#C1C7CE] lg:text-base text-xs whitespace-nowrap">Machine Teaching Pictures</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex items-center lg:border-r border-[#888888] px-[2.75rem]">
+              <div class="mr-2">
+                <img src="./theme/frontend/images/26.png" alt="">
+              </div>
+              <div class="">
+                <p class="gradient-text xl:text-[2.5rem] lg:text-[1.75rem] text-[1.5rem] leading-[3.125rem]">400K+</p>
+                <p class="text-[#C1C7CE] lg:text-base text-xs">Labeled images</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex items-center lg:border-r border-[#888888] px-[2.75rem]">
+              <div class="mr-2">
+                <img src="./theme/frontend/images/đh.png" alt="">
+              </div>
+              <div class="">
+                <p class="gradient-text xl:text-[2.5rem] lg:text-[1.75rem] text-[1.5rem] leading-[3.125rem]">12K+</p>
+                <p class="text-[#C1C7CE] lg:text-base text-xs">Labeling time</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex items-center lg:border-r border-[#888888] px-[2.75rem]">
+              <div class="mr-2">
+                <img src="./theme/frontend/images/25.png" alt="">
+              </div>
+              <div class="">
+                <p class="gradient-text xl:text-[2.5rem] lg:text-[1.75rem] text-[1.5rem] leading-[3.125rem]">2M+</p>
+                <p class="text-[#C1C7CE] lg:text-base text-xs">Patients used</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex items-center lg:border-r border-[#888888] px-[2.75rem]">
+              <div class="mr-2">
+                <img src="./theme/frontend/images/24.png" alt="">
+              </div>
+              <div class="">
+                <p class="gradient-text xl:text-[2.5rem] lg:text-[1.75rem] text-[1.5rem] leading-[3.125rem]">2M+</p>
+                <p class="text-[#C1C7CE] lg:text-base text-xs">Patients used</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="absolute top-0 -left-[20%]">
+      <img src="./theme/frontend/images/blur-medium.png" alt="">
+    </div>
+  </section>
+  <!-- partners and customers -->
+   <section class="relative">
+    <div class="container relative z-10 lg:mb-8 mb-2">
+      <div class="text-center mb-[2.5rem]">
+        <p class="subtitle before:h-[2px] before:w-6 before:bg-current before:mr-3 after:h-[2px] after:w-6 after:bg-current after:ml-3 flex items-center  justify-center font-semibold text-[#00A99D] uppercase tracking-[0.235rem] mb-3">
+          TESTIMONIALS
+        </p>
+        <p class="text-[1.5rem] lg:text-[1.75rem] xl:text-[2.5rem] font-medium text-white">What our partners and customers think about us</p>
+      </div>
+      <div class="flex flex-wrap lg:flex-nowrap">
+        <div class="w-full xl:w-3/5 lg:w-1/2 px-2 mb-4 lg:mb-0">
+          <div class="relative box-vision xl:px-8 px-2 overflow-hidden">
+            <video autoplay muted class=" object-cover pointer-events-none w-full h-full">
+              <source src="https://draid.ai/theme/frontend/images/Rotating%20Cyber%20World%20Network%20Background%20-%20Free%20HD%20Video%20Clips%20-%20Stock%20Video%20Footage%20at%20Videezy-.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="absolute z-10 lg:top-[2.25rem] top-[1.5rem] xl:text-2xl lg:text-[1rem] text-[0.75rem]  text-white">Our vision is expanding globally</div>
+            <ul class="absolute z-10 flex space-x-[3.875rem]  lg:bottom-[2.5rem] bottom-[1.5rem] uppercase">
+              <li class="text-white">
+                <p class="sm:text-[0.875rem] text-[0.75rem]">Used at</p>
+                <p>
+                  <span class="2xl:text-[3.75rem] font-medium xl:text-[2.5rem] sm:text-[1.875rem] text-[1.25rem]">182</span>
+                  <strong class="2xl:text-[3.75rem] xl:text-[2.5rem] sm:text-[1.875rem] text-[1.25rem] font-medium">+</strong>
+                  <span class="xl:text-[1.125rem]">Hospitals</span>
+                </p>
+              </li>
+              <li class="text-white">
+                <p class="sm:text-[0.875rem] text-[0.75rem]">Used by</p>
+                <p>
+                  <span class="2xl:text-[3.75rem] font-medium xl:text-[2.5rem] sm:text-[1.875rem] text-[1.25rem]">2k</span>
+                  <strong class="2xl:text-[3.75rem] xl:text-[2.5rem] sm:text-[1.875rem] text-[1.25rem] font-medium">+</strong>
+                  <span class="xl:text-[1.125rem]">Doctors</span>
+                </p>
+              </li>
+              <li class="text-white">
+                <p class="sm:text-[0.875rem] text-[0.75rem]">Happy</p>
+                <p>
+                  <span class="2xl:text-[3.75rem] font-medium xl:text-[2.5rem] sm:text-[1.875rem] text-[1.25rem]">2m</span>
+                  <strong class="2xl:text-[3.75rem] xl:text-[2.5rem] sm:text-[1.875rem] text-[1.25rem] font-medium">+</strong>
+                  <span class="xl:text-[1.125rem]">Patients</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-[#1D1D1D] xl:w-2/5 lg:w-1/2 w-full rounded-[1.875rem] lg:ml-4 lg:py-10">
+          <div class="swiper swiperComment h-full">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide px-[2.5rem] text-white lg:py-0 py-4">
+                <p class="mb-6">
+                  “DrAid helps Hue Central Hospital systemize medical images and especially provide accurate diagnostic results to ensure best treatment and patient care.”
+                </p>
+                <div class="flex items-center">
+                  <div>
+                    <img src="./theme/frontend/images/n2.png" alt="">
+                  </div>
+                  <div class="ml-2">
+                    <p class="lg:text-[1.125rem] font-semibold text-base">GS.TS.BS Pham Nhu Hiep</p>
+                    <p class="text-sm">Director of Hue Central Hospital</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide px-[2.5rem] text-white lg:py-0 py-4">
+                <p class="mb-6">
+                  “DrAid helps Hue Central Hospital systemize medical images and especially provide accurate diagnostic results to ensure best treatment and patient care.”
+                </p>
+                <div class="flex items-center">
+                  <div>
+                    <img src="./theme/frontend/images/n2.png" alt="">
+                  </div>
+                  <div class="ml-2">
+                    <p class="lg:text-[1.125rem] font-semibold text-base">GS.TS.BS Pham Nhu Hiep</p>
+                    <p class="text-sm">Director of Hue Central Hospital</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide px-[2.5rem] text-white lg:py-0 py-4">
+                <p class="mb-6">
+                  “DrAid helps Hue Central Hospital systemize medical images and especially provide accurate diagnostic results to ensure best treatment and patient care.”
+                </p>
+                <div class="flex items-center">
+                  <div>
+                    <img src="./theme/frontend/images/n2.png" alt="">
+                  </div>
+                  <div class="ml-2">
+                    <p class="lg:text-[1.125rem] text-base font-semibold">GS.TS.BS Pham Nhu Hiep</p>
+                    <p class="text-sm">Director of Hue Central Hospital</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class=" absolute z-10 text-center swp-pagination publications-pagination "></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute right-0  top-0">
+      <img src="./theme/frontend/images/blur-medium.png" alt="">
+    </div>
+   </section>
+   <!-- Partner  -->
+    <section class="relative z-10">
+      <div class="container bg-[#1D1D1D] px-10 py-10 rounded-[30px]">
+        <p class="text-2xl text-white mb-4">International Partners</p>
+        <div class="swiper swiperPartner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class=" c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-1.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain ">
+                <div class="c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class="c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-3.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class="c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-4.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class="c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-5.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class="c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-6.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class="c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-7.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class="c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-8.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-2xl text-white mb-4 mt-10">Local Partners</p>
+        <div class="swiper swiperPartner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class=" c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-1.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class="c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class="c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-3.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class="c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-4.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class="c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-5.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class="c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-6.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class="c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-7.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-[160px]">
+              <div class="bg-white rounded-[0.938rem] item-partner img-full-contain">
+                <div class="c-img pt-[54%] img-new">
+                  <img src="./theme/frontend/images/pa-8.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Certificates -->
+     <section class="relative">
+      <div class="container lg:py-[5.5rem] py-[2.5rem] relative z-10">
+        <h1 class="subtitle text-base before:h-[2px] before:w-6 before:bg-current before:mr-3 after:h-[2px] after:w-6 after:bg-current after:ml-3 flex items-center justify-center font-semibold text-[#00A99D] uppercase tracking-[0.235rem] mb-3">
+        CERTIFICATES
+        </h1>
+        <p class="uppercase xl:text-[2.5rem] text-[1.5rem] lg:text-[1.75rem]  font-medium text-center text-white mb-10">what we have achieved</p>
+        <div class="swiper swiperAchieve">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide " style="height: auto;">
+              <div class="item-achieve h-full hover:after:opacity-100 relative border-white border rounded-[1.875rem] bg-[#FFFFFF26] hover:bg-white group hover:text-black transition-all duration-500 pt-10 pb-[4.188rem] px-10">
+                <div class="c-img pt-[28%] img-full-contain bg-white lg:w-[184px] w-full rounded-xl mb-4">
+                  <img src="./theme/frontend/images/achi.png" alt="">
+                </div>
+                <h3 class="text-[1.375rem] text-white lg:text-left text-center transition-all duration-500 group-hover:text-[#252525] ">The Gold Medal Winners Awarded For ASEAN ICT Awards 2021</h3>
+              </div>
+            </div>
+            <div class="swiper-slide " style="height: auto;">
+              <div class="h-full item-achieve hover:after:opacity-100 relative border-white border rounded-[1.875rem] bg-[#FFFFFF26] hover:bg-white group hover:text-black transition-all duration-500 pt-10 pb-[4.188rem] px-10">
+                <div class="c-img pt-[28%] img-full-contain bg-white lg:w-[184px] w-full rounded-xl mb-4">
+                  <img src="./theme/frontend/images/achi-1.png" alt="">
+                </div>
+                <h3 class="text-[1.375rem] text-white lg:text-left text-center transition-all duration-500 group-hover:text-[#252525]">The Gold Medal Winners Awarded For ASEAN ICT Awards 2021</h3>
+              </div>
+            </div>
+            <div class="swiper-slide " style="height: auto;">
+              <div class="h-full item-achieve hover:after:opacity-100 relative border-white border rounded-[1.875rem] bg-[#FFFFFF26] hover:bg-white group hover:text-black transition-all duration-500 pt-10 pb-[4.188rem] px-10">
+                <div class="c-img pt-[28%] img-full-contain bg-white lg:w-[184px] w-full rounded-xl mb-4">
+                  <img src="./theme/frontend/images/achi-2.png" alt="">
+                </div>
+                <h3 class="text-[1.375rem] text-white lg:text-left text-center transition-all duration-500 group-hover:text-[#252525]">The Gold Medal Winners Awarded For ASEAN ICT Awards 2021</h3>
+              </div>
+            </div>
+            <div class="swiper-slide" style="height: auto;">
+              <div class="h-full item-achieve hover:after:opacity-100 relative border-white border rounded-[1.875rem] bg-[#FFFFFF26] hover:bg-white group hover:text-black transition-all duration-500 pt-10 pb-[4.188rem] px-10">
+                <div class="c-img pt-[28%] img-full-contain bg-white lg:w-[184px] w-full rounded-xl mb-4">
+                  <img src="./theme/frontend/images/achi-3.png" alt="">
+                </div>
+                <h3 class="text-[1.375rem] text-white lg:text-left text-center transition-all duration-500 group-hover:text-[#252525]">The Gold Medal Winners Awarded For ASEAN ICT Awards 2021</h3>
+              </div>
+            </div>
+            <div class="swiper-slide" style="height: auto;">
+              <div class="h-full item-achieve hover:after:opacity-100 relative border-white border rounded-[1.875rem] bg-[#FFFFFF26] hover:bg-white group hover:text-black transition-all duration-500 pt-10 pb-[4.188rem] px-10">
+                <div class="c-img pt-[28%] img-full-contain bg-white lg:w-[184px] w-full rounded-xl mb-4">
+                  <img src="./theme/frontend/images/achi-4.png" alt="">
+                </div>
+                <h3 class="text-[1.375rem] text-white lg:text-left text-center transition-all duration-500 group-hover:text-[#252525] relative z-20">The Gold Medal Winners Awarded For ASEAN ICT Awards 2021</h3>
+              </div>
+            </div>
+            <div class="swiper-slide" style="height: auto;">
+              <div class="h-full item-achieve hover:after:opacity-100 relative border-white border rounded-[1.875rem] bg-[#FFFFFF26] hover:bg-white group hover:text-black transition-all duration-500 pt-10 pb-[4.188rem] px-10">
+                <div class="c-img pt-[28%] img-full-contain bg-white lg:w-[184px] w-full rounded-xl mb-4">
+                  <img src="./theme/frontend/images/achi.png" alt="">
+                </div>
+                <h3 class="text-[1.375rem] text-white lg:text-left text-center transition-all duration-500 group-hover:text-[#252525]">The Gold Medal Winners Awarded For ASEAN ICT Awards 2021</h3>
+              </div>
+            </div>
+            
+          </div>
+          <div class=" mt-8 text-center swp-pagination pagination-achieve"></div>
+        </div>
+      </div>
+      <div class="absolute top-0 -left-[30%]">
+        <img src="./theme/frontend/images/blur-medium.png" alt="">
+      </div>
+     </section>
+     <!-- Explore our publications -->
+      <section class="relative z-10 bg-[#141414]">
+        <div class="container lg:py-[5.5rem] py-[2.5rem] relative z-10 ">
+          <h1 class="subtitle text-base before:h-[2px] before:w-6 before:bg-current before:mr-3 flex items-center font-semibold text-[#00A99D] uppercase tracking-[0.235rem] mb-3">
+            RESOURCES
+          </h1>
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-white font-medium xl:text-[2.5rem] lg:text-[1.75rem] text-[1.5rem]">Explore our publications</h3>
+            <a href="#" class=" btn btn-all whitespace-nowrap"><span>View all</span></a>
+          </div>
+          <div class="swiper Resource">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="border lg:border-transparent hover:border-white flex flex-col p-4 rounded-3xl transition-all duration-300 hover:opacity-100 h-full">
+                  <span class="py-[0.625rem] px-[1.25rem] w-fit bg-publications text-white inline-block mb-4 rounded-[0.625rem]">DrAid™ Pulmonology</span>
+                  <h3>
+                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-[#00a99d]">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
+                  </h3>
+                  <p class="text-sm text-white flex justify-between mb-4">
+                    <span class="font-semibold">AUTHOR</span>
+                    <span class="">Truong Quoc Hung</span>
+                  </p>
+                  <p class="text-sm text-white flex justify-between mb-4 ">
+                    <span class="font-semibold">PUBLICATION</span>
+                    <span class="text-right">DrAid™ Pulmonogy (2023)</span>
+                  </p>
+                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-[#00a99d] hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
+                </div>
+                
+              </div>
+              <div class="swiper-slide">
+                <div class="border lg:border-transparent hover:border-white flex flex-col p-4 rounded-3xl transition-all duration-300 hover:opacity-100 h-full">
+                  <span class="py-[0.625rem] px-[1.25rem] w-fit bg-publications text-white inline-block mb-4 rounded-[0.625rem]">DrAid™ Pulmonology</span>
+                  <h3>
+                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-[#00a99d]">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
+                  </h3>
+                  <p class="text-sm text-white flex justify-between mb-4">
+                    <span class="font-semibold">AUTHOR</span>
+                    <span class="">Truong Quoc Hung</span>
+                  </p>
+                  <p class="text-sm text-white flex justify-between mb-4 ">
+                    <span class="font-semibold">PUBLICATION</span>
+                    <span class="text-right">DrAid™ Pulmonogy (2023)</span>
+                  </p>
+                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-[#00a99d] hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="border lg:border-transparent hover:border-white flex flex-col p-4 rounded-3xl transition-all duration-300 hover:opacity-100 h-full">
+                  <span class="py-[0.625rem] px-[1.25rem] w-fit bg-publications text-white inline-block mb-4 rounded-[0.625rem]">DrAid™ Pulmonology</span>
+                  <h3>
+                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-[#00a99d]">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
+                  </h3>
+                  <p class="text-sm text-white flex justify-between mb-4">
+                    <span class="font-semibold">AUTHOR</span>
+                    <span class="">Truong Quoc Hung</span>
+                  </p>
+                  <p class="text-sm text-white flex justify-between mb-4 ">
+                    <span class="font-semibold">PUBLICATION</span>
+                    <span class="text-right">DrAid™ Pulmonogy (2023)</span>
+                  </p>
+                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-[#00a99d] hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
+                </div>
+                
+              </div>
+              <div class="swiper-slide">
+                <div class="border lg:border-transparent hover:border-white flex flex-col p-4 rounded-3xl transition-all duration-300 hover:opacity-100 h-full">
+                  <span class="py-[0.625rem] px-[1.25rem] w-fit bg-publications text-white inline-block mb-4 rounded-[0.625rem]">DrAid™ Pulmonology</span>
+                  <h3>
+                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-[#00a99d]">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
+                  </h3>
+                  <p class="text-sm text-white flex justify-between mb-4">
+                    <span class="font-semibold">AUTHOR</span>
+                    <span class="">Truong Quoc Hung</span>
+                  </p>
+                  <p class="text-sm text-white flex justify-between mb-4 ">
+                    <span class="font-semibold">PUBLICATION</span>
+                    <span class="text-right">DrAid™ Pulmonogy (2023)</span>
+                  </p>
+                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-[#00a99d] hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
+                </div>
+                
+              </div>
+              <div class="swiper-slide">
+                <div class="border lg:border-transparent hover:border-white flex flex-col p-4 rounded-3xl transition-all duration-300 hover:opacity-100 h-full">
+                  <span class="py-[0.625rem] px-[1.25rem] w-fit bg-publications text-white inline-block mb-4 rounded-[0.625rem]">DrAid™ Pulmonology</span>
+                  <h3>
+                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-[#00a99d]">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
+                  </h3>
+                  <p class="text-sm text-white flex justify-between mb-4">
+                    <span class="font-semibold">AUTHOR</span>
+                    <span class="">Truong Quoc Hung</span>
+                  </p>
+                  <p class="text-sm text-white flex justify-between mb-4 ">
+                    <span class="font-semibold">PUBLICATION</span>
+                    <span class="text-right">DrAid™ Pulmonogy (2023)</span>
+                  </p>
+                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-[#00a99d] hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
+                </div>
+                
+              </div>
+            </div>
+            <div class=" mt-10 text-center swp-pagination pa-resource"></div>
+          </div>
+        </div>
+      </section>
+      <!-- NEWS & BLOGS -->
+      <section>
+        <div class="container lg:pb-[5.5rem] lg:py-[2.5rem] relative z-10">
+          <h1 class="subtitle text-base before:h-[2px] before:w-6 before:bg-current before:mr-3 after:h-[2px] after:w-6 after:bg-current after:ml-3 flex items-center justify-center font-semibold text-[#00A99D] uppercase tracking-[0.235rem] mb-3">
+            NEWS & BLOGS
+          </h1>
+          <h3 class="text-white font-medium xl:text-[2.5rem] lg:text[1.75rem] text-[1.5rem] text-center mb-10">Discover the lastest news</h3>
+          <div class="hidden lg:flex justify-between mb-8">
+            <div class="w-[49%] rounded-[1.875rem] overflow-hidden hover-scale-img relative item-new ">
+              <a href="#" class="c-img pt-[57%]">
+                <img src="./theme/frontend/images/new-3.png" alt="">
+              </a>
+              <div class="absolute bottom-8 px-8 z-10">
+                <span class="text-white uppercase font-semibold mb-2">Events</span>
+                <p class="text-white text-[1.375rem] w-[70%] mb-4 line-clamp-2">Hue Central Hospital officially signed a cooperation agreement with VinBrain</p>
+                <p>
+                  <span class="text-white">08/02/2023</span>
+                  <i class="fa-solid fa-minus text-white"></i>
+                  <span class="text-white ">Admin</span>
+                </p>
+                <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-[#00A99D] absolute right-8 bottom-0 hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
+                  View Details
+                </a>
+              </div>
+            </div>
+            <div class="w-[49%] rounded-[1.875rem] overflow-hidden hover-scale-img relative item-new ">
+              <a href="#" class="c-img pt-[57%]">
+                <img src="./theme/frontend/images/new-3.png" alt="">
+              </a>
+              <div class="absolute bottom-8 p-6 z-10">
+                <span class="text-white uppercase font-semibold mb-2">Events</span>
+                <p class="text-white text-[1.375rem] w-[70%] mb-4 line-clamp-2">Hue Central Hospital officially signed a cooperation agreement with VinBrain</p>
+                <p>
+                  <span class="text-white">08/02/2023</span>
+                  <i class="fa-solid fa-minus text-white"></i>
+                  <span class="text-white ">Admin</span>
+                </p>
+                <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-[#00A99D] absolute right-8 bottom-0 mt-4  hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
+                  View Details
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper swiperNews">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class=" rounded-[1.875rem] overflow-hidden hover-scale-img relative news ">
+                  <a href="#" class=" pt-[75%] c-img">
+                    <img src="./theme/frontend/images/new-3.png" alt="">
+                  </a>
+                  <div class="content absolute bottom-8 px-8 z-10">
+                    <p class="text-white uppercase font-semibold mb-2">Events</p>
+                    <a href="#" class="text-white text-[1.375rem] w-[80%] mb-4 line-clamp-2 hover:text-[#00A99D]">Hue Central Hospital officially signed a cooperation agreement with VinBrain</a>
+                    <p class="mb-4">
+                      <span class="text-white">08/02/2023</span>
+                      <i class="fa-solid fa-minus text-white"></i>
+                      <span class="text-white ">Admin</span>
+                    </p>
+                    <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-[#00A99D] hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
+                      View Details
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class=" rounded-[1.875rem] overflow-hidden hover-scale-img relative news ">
+                  <a href="#" class=" pt-[75%] c-img">
+                    <img src="./theme/frontend/images/new.png" alt="">
+                  </a>
+                  <div class="content absolute bottom-0 left-0 p-8 z-10">
+                    <p class="text-white uppercase font-semibold mb-2">Events</p>
+                    <a href="#" class="text-white text-[1.375rem] w-[80%] mb-4 line-clamp-2 hover:text-[#00A99D]">Hue Central Hospital officially signed a cooperation agreement with VinBrain</a>
+                    <p class="mb-4">
+                      <span class="text-white">08/02/2023</span>
+                      <i class="fa-solid fa-minus text-white"></i>
+                      <span class="text-white ">Admin</span>
+                    </p>
+                    <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-[#00A99D] hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
+                      View Details
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class=" rounded-[1.875rem] overflow-hidden hover-scale-img relative news ">
+                  <a href="#" class=" pt-[75%] c-img">
+                    <img src="./theme/frontend/images/new-3.png" alt="">
+                  </a>
+                  <div class="content absolute bottom-0 left-0 p-8 z-10">
+                    <p class="text-white uppercase font-semibold mb-2">Events</p>
+                    <a href="#" class="text-white text-[1.375rem] w-[80%] mb-4 line-clamp-2 hover:text-[#00A99D]">Hue Central Hospital officially signed a cooperation agreement with VinBrain</a>
+                    <p class="mb-4">
+                      <span class="text-white">08/02/2023</span>
+                      <i class="fa-solid fa-minus text-white"></i>
+                      <span class="text-white ">Admin</span>
+                    </p>
+                    <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-[#00A99D] hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
+                      View Details
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class=" rounded-[1.875rem] overflow-hidden hover-scale-img relative news ">
+                  <a href="#" class="c-img pt-[75%]">
+                    <img src="./theme/frontend/images/new-1.png" alt="">
+                  </a>
+                  <div class="content absolute bottom-0 left-0 p-8 z-10">
+                    <p class="text-white uppercase font-semibold mb-2">Events</p>
+                    <a href="#" class="text-white text-[1.375rem] w-[80%] mb-4 line-clamp-2 hover:text-[#00A99D]">Hue Central Hospital officially signed a cooperation agreement with VinBrain</a>
+                    <p class="mb-4">
+                      <span class="text-white">08/02/2023</span>
+                      <i class="fa-solid fa-minus text-white"></i>
+                      <span class="text-white ">Admin</span>
+                    </p>
+                    <a href="#" class="btn-view-more py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-[#00A99D] hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
+                      View Details
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class=" btn btn-all mt-8 mx-auto lg:mb-0 mb-6"><span>View All</span></a>
+        </div>
+      </section>
+      <!-- Form -->
+       <section class="lg:mb-[6.5rem] mb-[2.5rem]">
+        <div class="container relative">
+            <div class="lg:w-1/2 xl:w-[65%] w-full overflow-hidden rounded-[1.875rem] xl:block hidden">
+              <video autoplay muted class=" top-0 left-0 object-cover pointer-events-none w-full h-full">
+                <source src="https://img.pikbest.com/10/70/81/13bpIkbEsT8sG.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="bg-[#1D1D1D] xl:w-1/2 w-full lg:p-[4rem] p-[1rem] pt-[1.5rem] text-white xl:absolute lg:top-[3%] z-10 right-0 rounded-[1.875rem] shadow-white">
+              <h3 class="sm:text-4xl text-[1.5rem] text-center">Register information</h3>
+              <p class="text-center mb-[3.188rem]">Please fill in your personal information to receive the latest news<br> from DrAid - VinBrain</p>
+              <form class="flex flex-wrap">
+                <div class="lg:px-3 sm:mb-4 mb-2 flex flex-col w-1/2">
+                  <label for="first_name" class="mb-1">First Name</label>
+                  <input type="text" id="first_name" name="name" placeholder="Hai" required>
+                </div>
+                <div class="lg:px-3 px-1 flex flex-col w-1/2">
+                  <label for="last_name" class="mb-1">Last Name</label>
+                  <input type="text" id="last_name" name="name" placeholder="Hoang" required>
+                </div>
+                <div class="lg:px-3 px-1 flex flex-col w-1/2">
+                  <label for="email" class="mb-1">Your E-mail</label>
+                  <input type="email" id="email" name="email" placeholder="hai123@gmail.com" required>
+                </div>
+                <div class="lg:px-3 px-1 flex flex-col w-1/2">
+                  <label for="phone" class="mb-1">Your Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+84 988 123 456" required>
+                </div>
+                <a href="#" class=" btn btn-all mt-8 mx-auto"><span>Submit Now</span></a>
+              </form>
+            </div>
+            <div class="absolute top-0 w-[40%] right-0 xl:block hidden">
+              <img src="./theme/frontend/images/blur-medium.png" alt="">
+            </div>
+        </div>
+      </section>
+      <footer class="bg-[#020202] relative z-10">
+        <div class="container lg:flex block lg:py-5 py-3">
+          <div class="max-w-full  lg:block flex items-center justify-center">
+            <img src="./theme/frontend/images/footer.PNG" alt="">
+          </div>
+          <div class="item-footer lg:w-[80%] lg:ml-[7.938rem]">
+            <ul class="">
+            <li><a href="#" class="text-[#00A99D] text-sm">DrAid Services</a>
+              <ul>
+                <li><a href="#" class="text-white lg:text-[1.125rem] text-[1rem]">AI service</a>
+                  <ul>
+                    <li><a href="#">AI as a service</a></li>
+                    <li><a href="#">AI Market Place</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#" class="text-white lg:text-[1.125rem] text-[1rem]">Digital healthcare platform</a>
+                  <ul>
+                    <li><a href="#">Appliance DEMO</a></li>
+                    <li><a href="#">AI PACS Cloud DEMO</a></li>
+                    <li><a href="#">VNA</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="text-[#00A99D] text-sm">DrAid AI Solutions</a>
+              <ul>
+                <li><a href="#">DrAid for CXR</a></li>
+                <li><a href="#">DrAid for Liver Cancer</a></li>
+                <li><a href="#">DrAid for Rectal Cancer</a></li>
+                <li><a href="#">DrAid for Thalassemia</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="text-[#00A99D] text-sm">Resources</a>
+              <ul>
+                <li><a href="#">Publications</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">News</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="text-[#00A99D] text-sm">Contact Us</a>
+              <ul>
+                <li class="lg:space-x-8 space-x-5 mt-2">
+                  <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                </li>
+                <li><a href="#">Email: infor@vinbrain.net</a></li>
+                <li><a href="#">Hotline: 02871 099 455</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="h-[2px] w-full bg-[#888888]"></div>
+          <p class="text-[#888888] text-xs mt-2">Business registration certificate No. 0108716920 first registered on April 25, 2019 by the Vietnam Ministry of Planning and Investment.</p>
+          <p class="text-[#888888] text-xs">Head office address: No. 7 Bang Lang 1 Street, Vinhomes Riverside Eco-urban Area, Viet Hung Ward, Long Bien District, Hanoi City.</p>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.0/swiper-bundle.min.js"></script>
+  <script src="./theme/frontend/js/slider.js"></script>
+</body>
+</html>
