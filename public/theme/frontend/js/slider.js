@@ -8,9 +8,9 @@ var SLIDER = {
       speed: 600,
       spaceBetween: 8,
       watchSlidesProgress: true,
-      // autoplay: {
-      //   delay: 6000,
-      // },
+      autoplay: {
+        delay: 6000,
+      },
       pagination: {
         el: ".pagination-banner",
         clickable: true,
@@ -248,15 +248,15 @@ document.addEventListener("DOMContentLoaded", function () {
   SLIDER.init();
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleButton = document.getElementById('toggleButton');
-  const content = document.getElementById('content');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const toggleButton = document.getElementById('toggleButton');
+//   const content = document.getElementById('content');
   
-  toggleButton.addEventListener('click', () => {
-      content.classList.toggle('hihi');
-      content.classList.toggle("visible");
-  });
-  });
+//   toggleButton.addEventListener('click', () => {
+//       content.classList.toggle('hihi');
+//       content.classList.toggle("visible");
+//   });
+//   });
 
 // function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) {
 //     let currentNumber = startNumber

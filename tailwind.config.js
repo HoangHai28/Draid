@@ -17,7 +17,7 @@ module.exports = {
         "2xl": "1504px",
       },
       colors: {
-        'cl-black': 'var(--cl-black)',
+        'cl-green': 'var(--cl-green)',
       },
       container: {
         center:true,

@@ -50,22 +50,22 @@
       </div>
       <div class="flex items-center heade-right ml-auto">
         <div class="relative mr-4 h-lang cursor-pointer hidden xl:block group text-white py-4">
-          <a href="#" class="border border-white rounded-full p-2 hover:text-[#00a99d] hover:border-[#00a99d]">
+          <a href="#" class="border border-white rounded-full p-2 hover:text-cl-green hover:border-cl-green">
             <i class="fa-solid fa-earth-asia fa-xl"></i>
           </a>
           <ul class="absolute z-50 top-[100%] invisible pointer-events-none opacity-0 transition-all duration-300 bg-[#111] text-center group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto ">
-            <li><a href="#" class="block hover:text-[#00a99d] hover:bg-[#656565] px-4 py-2">VN</a></li>
-            <li><a href="#" class="block hover:text-[#00a99d] hover:bg-[#454545] px-4 py-2">EN</a></li>
+            <li><a href="#" class="block hover:text-cl-green hover:bg-[#656565] px-4 py-2">VN</a></li>
+            <li><a href="#" class="block hover:text-cl-green hover:bg-[#454545] px-4 py-2">EN</a></li>
           </ul>
         </div>
-        <a href="#" title="Contact Us" class=" font-semibold text-white py-3 px-6 rounded-3xl border border-white hover:bg-white hover:text-[#A1D078]">
+        <a href="#" title="Contact Us" class=" font-semibold text-white py-3 px-6 rounded-3xl border border-white hover:bg-white hover:text-cl-green">
           Contact Us
         </a>
       </div>
     </div>
   </header>
   <section class="section-slide__banner pt-6 lg:pt-20 xl:pt-0">
-    <div class="swiper slide-banner__index">
+    <div class="swiper slide-banner__index ">
       <div class="swiper-wrapper">
         <div class="swiper-slide xl:h-[100vh] h-auto banner-video self-center">
           <video autoplay muted class=" top-0 left-0 object-cover pointer-events-none w-full h-full">
@@ -91,7 +91,7 @@
             </div>
             <div class="w-full xl:w-1/2">
               <div class="banner-image relative">
-                <div class="img-main lg:max-w-[585px] max-w-[485px] mx-auto img_full">
+                <div class="img-main lg:max-w-[585px] max-w-[485px] mx-auto img_full blur-effect">
                   <img src="./theme/frontend/images/banner.png" alt="">
                 </div>
                 <div class="list-pro_detail">
@@ -131,13 +131,20 @@
           </div>
         </div>
       </div>
-      <div class="banner-next absolute top-1/2 z-50 right-[2%] border rounded-full  w-12 h-12 hidden lg:flex justify-center items-center hover:bg-white transition-all duration-300 border-[#00a99d]">
-        <i class="fa-solid fa-arrow-right text-[#00a99d] fa-2xl"></i>
+      <div class="banner-next absolute top-1/2 z-50 right-[2%] border rounded-full  w-12 h-12 hidden lg:flex justify-center items-center hover:bg-white transition-all duration-300 border-cl-green">
+        <i class="fa-solid fa-arrow-right text-cl-green fa-2xl"></i>
       </div>
-      <div class="banner-prev absolute top-1/2 z-50 left-[2%] border rounded-full w-12 h-12 hidden lg:flex justify-center items-center border-[#00a99d] hover:bg-white transition-all duration-300">
-        <i class="fa-solid fa-arrow-left text-[#00a99d] fa-2xl"></i>
+      <div class="banner-prev absolute top-1/2 z-50 left-[2%] border rounded-full w-12 h-12 hidden lg:flex justify-center items-center border-cl-green hover:bg-white transition-all duration-300">
+        <i class="fa-solid fa-arrow-left text-cl-green fa-2xl"></i>
       </div>
-      <div class="swp-pagination pagination-banner absolute lg:top-1/2 left-1/2 z-10"></div>
+      <div class="container hidden xl:flex justify-between items-center absolute left-1/2 -translate-x-1/2 bottom-8 z-10">
+        <div class="inline-flex">
+          <img src="./theme/frontend/images/scroll-down.svg" alt="">
+          <span class="text-white ml-1">Scroll down</span>
+        </div>
+        <div class="swp-pagination pagination-banner" style="width:fit-content"></div>
+      </div>
+      
     </div>
   </section>
   <!--  -->
@@ -145,7 +152,7 @@
     <div class="container bg-[#1D1D1D] lg:px-[3.5rem] xl:py-[3.5rem] relative z-10 rounded-[1.875rem]">
       <div class="flex flex-wrap xl:flex-nowrap">
         <div class="max-w-[42.5rem]">
-          <p class="subtitle before:h-[2px] before:w-6 before:bg-current before:mr-3 flex items-center font-semibold text-[#00A99D] uppercase tracking-[0.235rem] mb-3">
+          <p class="subtitle before:h-[2px] before:w-6 before:bg-current before:mr-3 flex items-center font-semibold text-cl-green uppercase tracking-[0.235rem] mb-3">
             Introduction
           </p>
           <p class="text-white lg:text-[2.5rem] text-[1.5rem] lg:mb-6 mb-2">About VinBrain</p>
@@ -231,7 +238,7 @@
    <section class="relative">
     <div class="container relative z-10 lg:mb-8 mb-2">
       <div class="text-center mb-[2.5rem]">
-        <p class="subtitle before:h-[2px] before:w-6 before:bg-current before:mr-3 after:h-[2px] after:w-6 after:bg-current after:ml-3 flex items-center  justify-center font-semibold text-[#00A99D] uppercase tracking-[0.235rem] mb-3">
+        <p class="subtitle before:h-[2px] before:w-6 before:bg-current before:mr-3 after:h-[2px] after:w-6 after:bg-current after:ml-3 flex items-center  justify-center font-semibold text-cl-green uppercase tracking-[0.235rem] mb-3">
           TESTIMONIALS
         </p>
         <p class="text-[1.5rem] lg:text-[1.75rem] xl:text-[2.5rem] font-medium text-white">What our partners and customers think about us</p>
@@ -461,7 +468,7 @@
     <!-- Certificates -->
      <section class="relative">
       <div class="container lg:py-[5.5rem] py-[2.5rem] relative z-10">
-        <h1 class="subtitle text-base before:h-[2px] before:w-6 before:bg-current before:mr-3 after:h-[2px] after:w-6 after:bg-current after:ml-3 flex items-center justify-center font-semibold text-[#00A99D] uppercase tracking-[0.235rem] mb-3">
+        <h1 class="subtitle text-base before:h-[2px] before:w-6 before:bg-current before:mr-3 after:h-[2px] after:w-6 after:bg-current after:ml-3 flex items-center justify-center font-semibold text-cl-green uppercase tracking-[0.235rem] mb-3">
         CERTIFICATES
         </h1>
         <p class="uppercase xl:text-[2.5rem] text-[1.5rem] lg:text-[1.75rem]  font-medium text-center text-white mb-10">what we have achieved</p>
@@ -527,7 +534,7 @@
      <!-- Explore our publications -->
       <section class="relative z-10 bg-[#141414]">
         <div class="container lg:py-[5.5rem] py-[2.5rem] relative z-10 ">
-          <h1 class="subtitle text-base before:h-[2px] before:w-6 before:bg-current before:mr-3 flex items-center font-semibold text-[#00A99D] uppercase tracking-[0.235rem] mb-3">
+          <h1 class="subtitle text-base before:h-[2px] before:w-6 before:bg-current before:mr-3 flex items-center font-semibold text-cl-green uppercase tracking-[0.235rem] mb-3">
             RESOURCES
           </h1>
           <div class="flex justify-between items-center mb-4">
@@ -540,7 +547,7 @@
                 <div class="border lg:border-transparent hover:border-white flex flex-col p-4 rounded-3xl transition-all duration-300 hover:opacity-100 h-full">
                   <span class="py-[0.625rem] px-[1.25rem] w-fit bg-publications text-white inline-block mb-4 rounded-[0.625rem]">DrAid™ Pulmonology</span>
                   <h3>
-                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-[#00a99d]">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
+                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-cl-green">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
                   </h3>
                   <p class="text-sm text-white flex justify-between mb-4">
                     <span class="font-semibold">AUTHOR</span>
@@ -550,7 +557,7 @@
                     <span class="font-semibold">PUBLICATION</span>
                     <span class="text-right">DrAid™ Pulmonogy (2023)</span>
                   </p>
-                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-[#00a99d] hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
+                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-cl-green hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
                 </div>
                 
               </div>
@@ -558,7 +565,7 @@
                 <div class="border lg:border-transparent hover:border-white flex flex-col p-4 rounded-3xl transition-all duration-300 hover:opacity-100 h-full">
                   <span class="py-[0.625rem] px-[1.25rem] w-fit bg-publications text-white inline-block mb-4 rounded-[0.625rem]">DrAid™ Pulmonology</span>
                   <h3>
-                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-[#00a99d]">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
+                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-cl-green">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
                   </h3>
                   <p class="text-sm text-white flex justify-between mb-4">
                     <span class="font-semibold">AUTHOR</span>
@@ -568,14 +575,14 @@
                     <span class="font-semibold">PUBLICATION</span>
                     <span class="text-right">DrAid™ Pulmonogy (2023)</span>
                   </p>
-                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-[#00a99d] hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
+                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-cl-green hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="border lg:border-transparent hover:border-white flex flex-col p-4 rounded-3xl transition-all duration-300 hover:opacity-100 h-full">
                   <span class="py-[0.625rem] px-[1.25rem] w-fit bg-publications text-white inline-block mb-4 rounded-[0.625rem]">DrAid™ Pulmonology</span>
                   <h3>
-                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-[#00a99d]">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
+                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-cl-green">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
                   </h3>
                   <p class="text-sm text-white flex justify-between mb-4">
                     <span class="font-semibold">AUTHOR</span>
@@ -585,25 +592,7 @@
                     <span class="font-semibold">PUBLICATION</span>
                     <span class="text-right">DrAid™ Pulmonogy (2023)</span>
                   </p>
-                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-[#00a99d] hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
-                </div>
-                
-              </div>
-              <div class="swiper-slide">
-                <div class="border lg:border-transparent hover:border-white flex flex-col p-4 rounded-3xl transition-all duration-300 hover:opacity-100 h-full">
-                  <span class="py-[0.625rem] px-[1.25rem] w-fit bg-publications text-white inline-block mb-4 rounded-[0.625rem]">DrAid™ Pulmonology</span>
-                  <h3>
-                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-[#00a99d]">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
-                  </h3>
-                  <p class="text-sm text-white flex justify-between mb-4">
-                    <span class="font-semibold">AUTHOR</span>
-                    <span class="">Truong Quoc Hung</span>
-                  </p>
-                  <p class="text-sm text-white flex justify-between mb-4 ">
-                    <span class="font-semibold">PUBLICATION</span>
-                    <span class="text-right">DrAid™ Pulmonogy (2023)</span>
-                  </p>
-                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-[#00a99d] hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
+                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-cl-green hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
                 </div>
                 
               </div>
@@ -611,7 +600,7 @@
                 <div class="border lg:border-transparent hover:border-white flex flex-col p-4 rounded-3xl transition-all duration-300 hover:opacity-100 h-full">
                   <span class="py-[0.625rem] px-[1.25rem] w-fit bg-publications text-white inline-block mb-4 rounded-[0.625rem]">DrAid™ Pulmonology</span>
                   <h3>
-                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-[#00a99d]">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
+                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-cl-green">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
                   </h3>
                   <p class="text-sm text-white flex justify-between mb-4">
                     <span class="font-semibold">AUTHOR</span>
@@ -621,7 +610,25 @@
                     <span class="font-semibold">PUBLICATION</span>
                     <span class="text-right">DrAid™ Pulmonogy (2023)</span>
                   </p>
-                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-[#00a99d] hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
+                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-cl-green hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
+                </div>
+                
+              </div>
+              <div class="swiper-slide">
+                <div class="border lg:border-transparent hover:border-white flex flex-col p-4 rounded-3xl transition-all duration-300 hover:opacity-100 h-full">
+                  <span class="py-[0.625rem] px-[1.25rem] w-fit bg-publications text-white inline-block mb-4 rounded-[0.625rem]">DrAid™ Pulmonology</span>
+                  <h3>
+                    <a href="#" class="mb-4 font-semibold text-white line-clamp-2 hover:text-cl-green">Lorem ipsum dolor sit amet consetur. Nunc nunc varius quis at ornare eu gravida neque quam.</a>
+                  </h3>
+                  <p class="text-sm text-white flex justify-between mb-4">
+                    <span class="font-semibold">AUTHOR</span>
+                    <span class="">Truong Quoc Hung</span>
+                  </p>
+                  <p class="text-sm text-white flex justify-between mb-4 ">
+                    <span class="font-semibold">PUBLICATION</span>
+                    <span class="text-right">DrAid™ Pulmonogy (2023)</span>
+                  </p>
+                  <a href="#" class="py-[0.813rem] text-white border border-white w-fit px-6 rounded-[1.563rem] hover:bg-cl-green hover:text-white transition-all duration-300">Download <i class="fa-solid fa-download ml-2"></i></a>
                 </div>
                 
               </div>
@@ -633,7 +640,7 @@
       <!-- NEWS & BLOGS -->
       <section>
         <div class="container lg:pb-[5.5rem] lg:py-[2.5rem] relative z-10 ">
-          <h1 class="subtitle text-base before:h-[2px] before:w-6 before:bg-current before:mr-3 after:h-[2px] after:w-6 after:bg-current after:ml-3 flex items-center justify-center font-semibold text-[#00A99D] uppercase tracking-[0.235rem] mb-3">
+          <h1 class="subtitle text-base before:h-[2px] before:w-6 before:bg-current before:mr-3 after:h-[2px] after:w-6 after:bg-current after:ml-3 flex items-center justify-center font-semibold text-cl-green uppercase tracking-[0.235rem] mb-3">
             NEWS & BLOGS
           </h1>
           <h3 class="text-white font-medium xl:text-[2.5rem] lg:text[1.75rem] text-[1.5rem] text-center mb-10">Discover the lastest news</h3>
@@ -644,13 +651,13 @@
               </a>
               <div class="absolute bottom-8 px-8 z-10">
                 <span class="text-white uppercase font-semibold mb-2">Events</span>
-                <p class="text-white text-[1.375rem] w-[70%] mb-4 line-clamp-2">Hue Central Hospital officially signed a cooperation agreement with VinBrain</p>
+                <p class="text-white text-[1.375rem] w-[70%] mb-4 line-clamp-2 cursor-pointer hover:text-cl-green transition-all duration-300">Hue Central Hospital officially signed a cooperation agreement with VinBrain</p>
                 <p>
                   <span class="text-white">08/02/2023</span>
                   <i class="fa-solid fa-minus text-white"></i>
                   <span class="text-white ">Admin</span>
                 </p>
-                <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-[#00A99D] absolute right-8 bottom-0 hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
+                <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-cl-green absolute right-8 bottom-0 hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
                   View Details
                 </a>
               </div>
@@ -661,13 +668,13 @@
               </a>
               <div class="absolute bottom-8 p-6 z-10">
                 <span class="text-white uppercase font-semibold mb-2">Events</span>
-                <p class="text-white text-[1.375rem] w-[70%] mb-4 line-clamp-2">Hue Central Hospital officially signed a cooperation agreement with VinBrain</p>
+                <p class="text-white text-[1.375rem] w-[70%] mb-4 line-clamp-2 cursor-pointer hover:text-cl-green transition-all duration-300">Hue Central Hospital officially signed a cooperation agreement with VinBrain</p>
                 <p>
                   <span class="text-white">08/02/2023</span>
                   <i class="fa-solid fa-minus text-white"></i>
                   <span class="text-white ">Admin</span>
                 </p>
-                <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-[#00A99D] absolute right-8 bottom-0 mt-4  hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
+                <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-cl-green absolute right-8 bottom-0 mt-4  hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
                   View Details
                 </a>
               </div>
@@ -682,13 +689,13 @@
                   </a>
                   <div class="content absolute bottom-8 px-8 z-10">
                     <p class="text-white uppercase font-semibold mb-2">Events</p>
-                    <a href="#" class="text-white text-[1.375rem] w-[80%] mb-4 line-clamp-2 hover:text-[#00A99D]">Hue Central Hospital officially signed a cooperation agreement with VinBrain</a>
+                    <a href="#" class="text-white lg:text-[1.375rem] text-base mb-4 line-clamp-2 hover:text-cl-green">Hue Central Hospital officially signed a cooperation agreement with VinBrain</a>
                     <p class="mb-4">
                       <span class="text-white">08/02/2023</span>
                       <i class="fa-solid fa-minus text-white"></i>
                       <span class="text-white ">Admin</span>
                     </p>
-                    <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-[#00A99D] hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
+                    <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-cl-green hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
                       View Details
                     </a>
                   </div>
@@ -697,17 +704,17 @@
               <div class="swiper-slide">
                 <div class=" rounded-[1.875rem] overflow-hidden hover-scale-img relative news ">
                   <a href="#" class=" pt-[75%] c-img">
-                    <img src="./theme/frontend/images/new.png" alt="">
+                    <img src="./theme/frontend/images/new-4.png" alt="">
                   </a>
                   <div class="content absolute bottom-0 left-0 p-8 z-10">
                     <p class="text-white uppercase font-semibold mb-2">Events</p>
-                    <a href="#" class="text-white text-[1.375rem] w-[80%] mb-4 line-clamp-2 hover:text-[#00A99D]">Hue Central Hospital officially signed a cooperation agreement with VinBrain</a>
+                    <a href="#" class="text-white lg:text-[1.375rem] text-base mb-4 line-clamp-2 hover:text-cl-green">Hue Central Hospital officially signed a cooperation agreement with VinBrain</a>
                     <p class="mb-4">
                       <span class="text-white">08/02/2023</span>
                       <i class="fa-solid fa-minus text-white"></i>
                       <span class="text-white ">Admin</span>
                     </p>
-                    <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-[#00A99D] hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
+                    <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-cl-green hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
                       View Details
                     </a>
                   </div>
@@ -720,13 +727,13 @@
                   </a>
                   <div class="content absolute bottom-0 left-0 p-8 z-10">
                     <p class="text-white uppercase font-semibold mb-2">Events</p>
-                    <a href="#" class="text-white text-[1.375rem] w-[80%] mb-4 line-clamp-2 hover:text-[#00A99D]">Hue Central Hospital officially signed a cooperation agreement with VinBrain</a>
+                    <a href="#" class="text-white lg:text-[1.375rem] text-base mb-4 line-clamp-2 hover:text-cl-green">Hue Central Hospital officially signed a cooperation agreement with VinBrain</a>
                     <p class="mb-4">
                       <span class="text-white">08/02/2023</span>
                       <i class="fa-solid fa-minus text-white"></i>
                       <span class="text-white ">Admin</span>
                     </p>
-                    <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-[#00A99D] hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
+                    <a href="#" class="py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-cl-green hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
                       View Details
                     </a>
                   </div>
@@ -739,13 +746,13 @@
                   </a>
                   <div class="content absolute bottom-0 left-0 p-8 z-10">
                     <p class="text-white uppercase font-semibold mb-2">Events</p>
-                    <a href="#" class="text-white text-[1.375rem] w-[80%] mb-4 line-clamp-2 hover:text-[#00A99D]">Hue Central Hospital officially signed a cooperation agreement with VinBrain</a>
+                    <a href="#" class="text-white lg:text-[1.375rem] text-base mb-4 line-clamp-2 hover:text-cl-green">Hue Central Hospital officially signed a cooperation agreement with VinBrain</a>
                     <p class="mb-4">
                       <span class="text-white">08/02/2023</span>
                       <i class="fa-solid fa-minus text-white"></i>
                       <span class="text-white ">Admin</span>
                     </p>
-                    <a href="#" class="btn-view-more py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-[#00A99D] hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
+                    <a href="#" class="btn-view-more py-3 px-6 border text-white border-white rounded-full font-semibold hover:bg-white hover:text-cl-green hover:shadow-[0_8px_24px_rgba(255,255,255,.45)]">
                       View Details
                     </a>
                   </div>
@@ -800,7 +807,7 @@
           </a>
           <div class="item-footer lg:w-[80%] xl:ml-[7.938rem]">
             <ul class="">
-            <li><a href="#" class="text-[#00A99D] text-sm">DrAid Services</a>
+            <li><a href="#" class="text-cl-green text-sm">DrAid Services</a>
               <ul>
                 <li><a href="#" class="text-white lg:text-[1.125rem] text-[1rem]">AI service</a>
                   <ul>
@@ -819,7 +826,7 @@
                 </li>
               </ul>
             </li>
-            <li><a href="#" class="text-[#00A99D] text-sm">DrAid AI Solutions</a>
+            <li><a href="#" class="text-cl-green text-sm">DrAid AI Solutions</a>
               <ul>
                 <li><a href="#">DrAid for CXR</a></li>
                 <li><a href="#">DrAid for Liver Cancer</a></li>
@@ -827,14 +834,14 @@
                 <li><a href="#">DrAid for Thalassemia</a></li>
               </ul>
             </li>
-            <li><a href="#" class="text-[#00A99D] text-sm">Resources</a>
+            <li><a href="#" class="text-cl-green text-sm">Resources</a>
               <ul>
                 <li><a href="#">Publications</a></li>
                 <li><a href="#">Blogs</a></li>
                 <li><a href="#">News</a></li>
               </ul>
             </li>
-            <li><a href="#" class="text-[#00A99D] text-sm">Contact Us</a>
+            <li><a href="#" class="text-cl-green text-sm">Contact Us</a>
               <ul>
                 <li class="lg:space-x-8 space-x-5 mt-2">
                   <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
